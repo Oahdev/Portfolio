@@ -1,10 +1,10 @@
-
+// $("footer p span").html(new Date().getFullYear());
 $(document).ready(function () {
     $(".menuBtn").click(function(){
-        $(".sidenav").toggle(700);
+        $(".sidenav").toggle();
     })
     $("#close-menu-btn").click(function(){
-        $(".sidenav").toggle(700);
+        $(".sidenav").toggle();
     })
     $("#back-to-top button").click(function(){
         $(document).scrollTop(0);

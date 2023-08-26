@@ -34,7 +34,6 @@ body{
     //NAV
     nav{
         display: flex;
-        // flex-wrap: wrap;
         background-color: var(--secondary-color);
         justify-content: space-between;
         align-items: center;
@@ -52,20 +51,17 @@ body{
                 display: flex;
                 gap: 18px;
                 li{
-                    // font-weight: bolder;
                     font-size: 18px;
                     a{
                         color: var(--primary-color);
                     }
                     :hover{
                         font-weight: bold;
-                        // color: black;
                     }
                 }
             }
         }
         #mobile-menu{
-            // display: none;
             .menuBtn{
                 #line{
                     width: 27px;
@@ -129,12 +125,7 @@ body{
                 h3{
                     font-weight: bolder;
                 }
-                #vimeo , video{
-                    .vp-center{
-                        #player{
-                            width: 100%;
-                        }
-                    }
+                video{
                     margin-top: 9px;
                     width: 100%;
                     height:300px;
@@ -154,7 +145,6 @@ body{
             img{
                 border-radius: 5px;
                 height: 300px;
-                // width: 80%;
             }
         }
 
@@ -162,25 +152,23 @@ body{
         .contact{
             ul{
                 display: flex;
-                justify-content: space-between;
-                // gap: 63px;
+                // justify-content: space-between;
                 flex-wrap: wrap;
                 li{
                     padding: 5px;
                     a{
                         display: flex;
                         align-items: center;
+                        color: black;
+                        font-weight: bold;
                         gap: 8px;
                         img{
                             width: 18px;
                         }
-                        color: black;
-                        :hover{
-                            // color: var(--primary-color);
-                            color: aqua;
-                            transition: .5s;
-                        }
-                        // text-decoration: none;
+                    }
+                    :hover{
+                        color: var(--primary-color);
+                        transition: .5s;
                     }
                 }
             }
@@ -231,6 +219,15 @@ body{
         flex-wrap: wrap;
         img{
             width: 100%;
+        }
+    }
+    .contact{
+        ul{
+            display: block;
+            li{
+                width: 100%;
+            }
+            // flex-wrap: wrap;
         }
     }
 }
