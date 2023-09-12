@@ -105,6 +105,18 @@ body .section-container ul {
   display: grid;
   gap: 18px;
 }
+body .section-container ul li a {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body .section-container ul li a span svg {
+  width: 10px;
+}
+body .section-container ul li a :hover {
+  color: var(--secondary-color);
+}
 body .section-container ul li h3 {
   font-weight: bolder;
 }
@@ -156,13 +168,13 @@ body #back-to-top {
   position: fixed;
   right: 18px;
   bottom: 18px;
-  opacity: 75%;
+  opacity: 72%;
 }
 body #back-to-top button {
   cursor: pointer;
   background-color: var(--primary-color);
   border: none;
-  border-radius: 9px;
+  border-radius: 50%;
   padding: 9px 18px;
   font-size: 27px;
   color: var(--secondary-color);
@@ -182,9 +194,6 @@ body #back-to-top button {
   }
   .hero img {
     width: 100%;
-  }
-  .contact ul {
-    display: block;
   }
   .contact ul li {
     width: 100%;
